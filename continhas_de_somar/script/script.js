@@ -25,12 +25,12 @@ const resultadoSoma = (n1, n2) => {
 const criaLinha = (n1, n2) => {
 	const linha = document.createElement('li');
 	lista.appendChild(linha);
-	criapergunta(n1, n2, linha);
+	criaPergunta(n1, n2, linha);
 	criaInput(linha);
 	criaDivCheck(linha);
 };
 
-const criapergunta = (n1, n2, elementoPai) => {
+const criaPergunta = (n1, n2, elementoPai) => {
 	const alinhamento = document.createElement('div');
 	elementoPai.appendChild(alinhamento);
 	alinhamento.innerHTML = n1 + ' + ' + n2 + ' = ';
